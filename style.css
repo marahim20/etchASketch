@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: yellow;
+    font-size: 3rem;
+}
+
+.holder {
+    display: flex;
+    gap: 10px;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas {
+    width: 45rem;
+    height: 45rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.cell {
+    background-color: bisque;
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+
+.cell:hover {
+    background-color: yellow;
+}
